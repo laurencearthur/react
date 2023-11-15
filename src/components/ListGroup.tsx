@@ -9,7 +9,7 @@ function ListGroup() {
       <ul className="list-group">
         {items.map((item, index) => (
           <li
-            key={item}
+            key={index}
             className="list-group-item"
             onClick={() => console.log(item, index)}
           >
