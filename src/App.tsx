@@ -1,9 +1,11 @@
 import ListGroup from "./components/ListGroup"
 
 function App() {
+  let items = ["London", "Tokyo", "Paris", "New York", "Spain"]
+
   return (
     <>
-      <ListGroup />
+      <ListGroup items={items} heading="Cities" />
     </>
   )
 }
