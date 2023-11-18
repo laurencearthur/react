@@ -1,19 +1,10 @@
-import { useState } from "react"
-import Alert from "./components/Alert"
-import Button from "./components/Button"
-import { GoCopilot } from "react-icons/go"
+import Like from "./components/Like"
 
-function App() {
-  const [AlertMsg, setAlertMsg] = useState(false)
+const App = () => {
   return (
-    <>
-      {AlertMsg && <Alert onClose={() => setAlertMsg(false)}>my alert</Alert>}
-      <GoCopilot size={100} color="#BE3144" />
-      <br/>
-      <Button color="danger" onClick={() => setAlertMsg(true)}>
-        my button
-      </Button>
-    </>
+    <div>
+      <Like onClick={() => console.log("clicked")} />
+    </div>
   )
 }
 
