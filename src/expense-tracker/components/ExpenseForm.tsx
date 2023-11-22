@@ -60,7 +60,7 @@ const ExpenseForm = () => {
             Category
           </label>
           <select
-            {...register("category")}
+            {...register("categories")}
             id="category"
             className="form-select"
           >
